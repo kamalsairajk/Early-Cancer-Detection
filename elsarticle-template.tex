@@ -1,0 +1,127 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\journal{Journal of \LaTeX\ Templates}
+\bibliographystyle{unsrtnat}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+%\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Early Cancer Detection}
+
+%% Group authors per affiliation:
+\author{Arun K, Kamal K, Sivajee Raju N, Sanyam H, Samhith}
+
+%% or include affiliations in footnotes:
+%\author[mymainaddress,mysecondaryaddress]{Elsevier Inc}
+%\ead[url]{www.elsevier.com}
+
+%\author[mysecondaryaddress]{Global Customer Service\corref{mycorrespondingauthor}}
+%\cortext[mycorrespondingauthor]{Corresponding author}
+%\ead{support@elsevier.com}
+
+%\address[mymainaddress]{1600 John F Kennedy Boulevard, Philadelphia}
+%\address[mysecondaryaddress]{360 Park Avenue South, New York}
+
+%\begin{abstract}
+%This template helps you to create a properly formatted \LaTeX\ manuscript.
+%\end{abstract}
+
+%\begin{keyword}
+%\texttt{elsarticle.cls}\sep \LaTeX\sep Elsevier \sep template
+%\MSC[2010] 00-01\sep  99-00
+%\end{keyword}
+
+\end{frontmatter}
+
+%\linenumbers
+
+\section*{Introduction}
+
+Leukemia, a type of cancer found in your blood and bone marrow, is caused by the rapid production of abnormal white blood cells caused by radiation exposure \citep{Intro1}. The high number of abnormal white blood cells are not able to fight infection, and they impair the ability of the bone marrow to produce red blood cells and platelets. In general, leukemia was classified based on the speed of progression and the type of cells. Base on leukemia progresses, the first type of Leukemia classification is divided into two groups: Acute leukemia and Chronic leukemia. In acute leukemia, the abnormal blood cells which cannot carry out their normal functions are multiply speedily. In chronic leukemia, some types of it produce too many cells and some cause too few cells are born. In contrast to acute leukemia, chronic leukemia concern mature blood cells. The second type of leukemia, which is determined by the type of white blood cell affected, consists of Lymphocytic leukemia and Myelogenous leukemia. Lymphocytic leukemia occurs in a type of marrow cell that forms lymphocytes. Myelogenous leukemia affects myeloid cells that give rise to red blood cells, some other types of white cells and platelets.   
+
+Combining these two general classifications above, leukemia was classified into four main types based on severity level and infected cells type - Acute Lymphoblastic Leukemia (ALL), Acute Myeloid Leukemia (AML), Chronic Lymphocytic Leukemia (CLL) and Chronic Myeloid Leukemia (CML) \citep{Intro2}. 
+
+Acute lymphoblastic leukemia is not only the most common type of Leukemia in young children, but also affects adults in the age of 65 and above 65 years old. Acute myeloid leukemia occurs more commonly in adults than in children and more commonly in men than women. AML is listed as the most dangerous type of Leukemia because there is only 26.9\% surviving rate over the five-year period. \citep{Intro3} . Chronic lymphocytic leukemia is more common at the age of 55 and older and it occurs mainly in men with two-thirds of patients are men. The five-year survival rate of CLL in the 2007-2013 period is 83.2\%. \citep{Intro4}. Chronic myeloid leukemia occurs mainly in adult with the five-year survival rate is 66.9\%  
+
+About 5,960 new cases of ALL (3,290 in males and 2,670 in females) every year resulting in 1,470 deaths (830 in males and 640 in females) \citep{Intro5}. According to the National Cancer Institute, it is estimated that there are 24,500 people died because of leukemia in the US in 2017. Leukemia represents 4.1\% of all cancer cases deaths in the U.S. \citep{Intro6} Clinical diagnosis of Acute leukemia is based on a bone marrow examination by a pathologist, the test result is based on the experience of the technician which involves a human judgement and error factor and is time taking. Therefore, using an automatic system to early diagnosis leukemia eliminates this factor has an important role in Leukemia diagnosis. Now, in the world of such advance technology which proves itself as our friend, we can start the identification of blood disorders through visual inspection of microscopic images of blood cells. 
+
+From the identification of blood disorders, it can lead to classification of certain diseases related to blood. This paper describes a preliminary study of developing a detection of leukemia types using microscopic blood sample images. \citep{Intro7} Blood is the main source of information that gives an indication of changes in health and development of specific diseases. Changes in the number or appearance of elements that formed will guide health condition of an individual. Analysing through images is very important as from images, diseases can be detected and diagnosed at earlier stage. From there, further actions like controlling, monitoring and prevention of diseases can be done. Images are used as they are cheap and do not require expensive testing and lab equipment.
+\bigbreak
+\begin{center}
+\includegraphics[scale=0.75]{intropic1}
+\includegraphics[scale=0.75]{intropic2}
+\end{center}
+\bigbreak
+The system focuses on white blood cells. The system uses features in microscopic images of peripheral blood sample smear slides and examine changes on texture, geometry, colour and statistical analysis to differentiate a healthy white blood cell (lymphocyte) from a cancerous cell \citep{Intro8}. Acute lymphocytic leukaemia can be detected by microscopic inspection of peripheral blood samples. The inspection consists in the search of white cells with malformations due to the presence of a cancer \citep{Intro9}. For decades, this task has been performed by experienced operators, which basically perform two main analyses: Cell classification and Counting.
+
+\section*{Related Works}
+Researches about leukemia classification in recent years are mainly based on computer vision techniques \citep{Related1}, \citep{Related2}. The most common algorithm in this approach consists of several rigid steps: image pre-processing, clustering, morphological filtering, segmentation, feature selection or extraction, classification, and evaluation \citep{Related3}. Most of the authors in the literature have adopted machine learning techniques such as K-means clustering in order to detect and classify blood cells in images. In most of cases, the conventional statistical features such as energy, entropy, contrast, and correlation, were extracted and given as inputs to a machine learning model.  
+
+\citet{Related4} developed a technique merging the threshold segmentation, fuzzy and some mathematical morphology. It is very good in detecting the leukocytes faster than any other technique does. The problem in this technique is that it is not separating the nucleus and cytoplasm properly. \citet{Related5} introduced the technique to find out the accurate threshold for segmentation of the leukocytes.
+He used fuzzy divergence in that technique. He used various functions like Gaussian, Gamma, Gauchy etc. in that technique. This technique works well for segmenting the nucleus but the extraction of cytoplasm has not been taken care of which is also as important as nucleus extraction in cancer detection. \citet{Related6} proposed a scheme for nucleus extraction. The watershed transform has been used in this scheme which is based on the image forest transform. He has extracted the cytoplasm by using the size distribution information. This scheme does not work well if the cytoplasm isn’t round.  
+
+\citet{Related7} proposed a system in which he proposed “two-stage blood image segmentation algorithm”. They are using binary-filtering and some automatic threshold techniques. This system performs well for extracting the nucleus, cytoplasm and the nucleolus from the lymphocyte images. The two stage segmentation process has been applied here and because of this computation time is higher. The images are taken under different lightening condition which makes difficult to choose the optimum threshold for segmentation. \citet{Related8} invented a scheme for classifying leukemia using the swarm model. The leukemia cells need to be isolated manually to make this system work. These isolated cells are then segmented by Markov random fields. These segmented nucleus and cytoplasm are then used to find out features of the type of leukemia 
+
+In the work proposed by \citet{Related9}, a system was developed to detect ALL using images from a single database. These images have multiple nuclei per image. The pre-processing step consists in the conversion of the image from RGB to the L*a*b colour space. In the segmentation step, the unsupervised algorithm K-means is applied to components *a and *b from the converted image, with the number of groups equals to three. In the feature extraction step, they used shape features (e.g. area, perimeter, compactness, solidity, eccentricity, elongation and form-factor), Grey Level Co-occurrence Matrix (GLCM) \citep{Related10} and Fractal dimension \citep{Related11} as descriptors. In order to evaluate the system, they used 98 blood images from the ALL-IDB1 database \citep{Related12}. The classification was performed using Support Vector Machine and three techniques for cross-validation: k-fold, Hold-Out and Leave-One-Out. After analysing the results, the authors concluded that the technique that obtained the best accuracy 93.50\%.  
+
+\citet{Related3} proposed the use of neural networks as classifiers. The method proposed in this work starts converting the image from RGB to the L*a*b colour space. The resulted image is used in the clustering algorithm k-means, which separates the image into three different classes based on their colour information. Contrast enhancement, auto-thresholding and morphological operations are applied in order to obtain the nucleus segmented image. feature extraction and classification stages are subdivided into two steps. The first feature vector set obtained consists of five textural features, four Grey Level Co-occurrence Matrix (GLCM) features (e.g. energy, entropy, contrast, and correlation) and one fractal feature which is represented by Hausdorff Dimension. These feature vectors are analysed by PCA algorithm which produces the input source for the first neural network classifier, the purpose of this classifier is to classify the cells in normal and abnormal. The same algorithm is applied to the second feature extraction process, though the extracted features are different.  
+
+Since the second classifier needs a better differentiation, five geometrical features (e.g. cell area, nucleus area, cytoplasm area, nucleus-to-cytoplasm area ratio, and nucleus-to-cell area ratio) are extracted and analysed by PCA algorithm in order to produce input for second neural network classifier that identifies AML and ALL. Both neural networks are trained using Levenberg-Marquardt (LM) algorithm \citep{Related13}. The system achieved an accuracy of 97.70\% using 100 blood images from ALL-IDB1 base. 
+
+\citet{Related14}, the authors presented an automatic system for the detection of leukemia using microscopic blood images. This work can be divided into pre-processing, segmentation, feature extraction and classification stages. In the first stage, filters were used to remove possible noises in the image, to facilitate the segmentation of the image. The authors, unlike other state of-the-art works, do not make changes in the colour space, using the original RGB colour space. In the segmentation step, the image is converted to grayscale and the clustering algorithms K-means and \citet{Related15} are applied.  In the feature extraction stage, colour, geometry, texture and statistics features were used. ALL-IDB1 is used to evaluate this system, however, only 27 images were used in the tests. The system achieved an accuracy of 93.57\% using SVM.  
+
+The system proposed by S. Agaian, M. Madhukar, A. T. Chronopoulos, 2012 presented an approach for the classification of blood images with multiple nuclei. The authors converted the images from RGB to the L*a*b color space and applied the clustering algorithm Kmeans. The chosen features were: shape, color, GLCM, Haar wavelet and Fractal dimension. SVM was used as the classifier. The system obtained an accuracy above 94.00\% using 98 images from ALL-IDB1. 
+
+It is clear that the traditional machine learning methods have some disadvantages such as time-consuming in development and, mostly, the need of deciding which kind of features must be utilized in order to maximize the classification’s accuracy. Instead, deep learning can learn and extract high level features automatically and perform classification in the same time. Therefore, we propose a novel Convolutional Neural Network (CNN) architecture to discriminate normal and abnormal blood cell images. The advantage of using CNN is not only it reduces the processing time by allowing us to skip most of the pre-processing steps, but also it has the ability of extracting features that are better than the conventional statistical features, as we will demonstrate in this paper.
+
+\section*{Proposed Methodology}
+
+In this paper, we use CNN to extract features from raw blood cell images and perform classification. The architecture of CNN includes three main types of layers: convolutional layer, pooling layer, and fully-connected layer. Convolution layers compute the output of neurons by calculating a weighted sum of the inputs, adding a bias to that weighted sum and then applying the rectifier linear unit (ReLu) on it. ReLu, given by the equation ReLu(z)= max (0, z), is one type of activation function which decides whether a neuron should be active or not. Pooling layers are in charge of reducing the spatial size of the representation in order to decrease the number of parameters and computations, leading to control overfitting. Fully connected layers contain neurons that are connected to all the activations from the previous layer. In this work, we use a network containing 7 layers, as we see in Figure. The first 5 layers perform feature extraction and the other 2 layers (fully connected and softmax) classify the extracted features. The input image has the size of 100x100x3. In the convolution layer 1, we used a filter size of 5x5 and a total of 16 different filters. The stride is 1 and no zero-padding was applied. The second and third convolution layers have the same structure with the first one but different number of filters, 32 and 64, respectively. We used pooling layer with filter size 2, stride 2 to decrease the volume spatially. During the learning, the chosen size of the mini batch was 100. ReLu is used as the activation function. 
+\begin{center}
+\includegraphics[scale=0.75]{architecture}
+\end{center}
+In the preliminary version of this work that has been published in the 6th International Conference on Advanced Information Technologies and Applications (ICAITA 2017) \citep{PM1}, the authors have also adopted the convolutional neural network but with a slightly shallow architecture compared to the one proposed here and a really small number of data. In the current research, we present a deeper architecture trained on a significantly augmented dataset.
+\bigbreak
+\bigbreak
+\bigbreak
+\section*{References}
+
+\bibliography{mybibfile}
+
+\end{document}
