@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 16 11:06:38 2017
 
-@author: arunkls
-"""
-
-# -*- coding: utf-8 -*-
 
 
 #importing Keras, Library for deep learning 
